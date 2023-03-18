@@ -14,3 +14,16 @@ if guess == number:
 else:
     print("Sorry, the number was", number)
 
+#Python code that displays a smiley face after it runs
+print("\U0001F600")
+
+#Python code that generates a pyramid of asterisks (*) based on user input
+rows = int(input("Enter the number of rows for the pyramid: "))
+
+for i in range(1, rows+1):
+    for j in range(1, rows-i+1):
+        print(" ", end="")
+    for j in range(1, 2*i):
+        print("*", end="")
+    print()
+
